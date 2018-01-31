@@ -4,6 +4,7 @@ First of all, download the model here(https://pan.baidu.com/s/1jIS0iDg) and put 
 Then, training the model by running the following commands:
 
 cd tc3d
+
 make -j
 cd  examples/tc3d_ucf101_finetuning
 sh finetuning_ucf101.sh
