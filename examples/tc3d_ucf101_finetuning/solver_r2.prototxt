@@ -1,0 +1,17 @@
+net: "train_resnet18_r2.prototxt"
+base_lr:0.005  
+momentum: 0.9
+weight_decay: 0.00005
+
+lr_policy: "multistep"
+gamma: 0.1
+iter_size:2
+
+stepvalue: [8000,12000] #this for ucf aggre
+max_iter: 14000
+
+display: 20
+snapshot: 1000
+snapshot_prefix: "./model/LOG_TSN_UCF101_split3_"
+solver_mode: GPU
+test_initialization: false
